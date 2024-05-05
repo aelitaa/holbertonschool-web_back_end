@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Contains sum_mixed_list func """
-from typing import List
+from typing import List, Union
 
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
