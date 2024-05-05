@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """ Contains func make_multiplier """
+from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], [float]]:
