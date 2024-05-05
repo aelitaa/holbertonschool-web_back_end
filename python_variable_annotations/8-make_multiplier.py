@@ -1,11 +1,21 @@
 #!/usr/bin/env python3
-""" Contains func make_multiplier """
+"""
+    Callable function
+"""
 from typing import Callable
 
 
-def make_multiplier(multiplier: float) -> Callable[[float], [float]]:
-    """ multiplier returning func """
-    def multiplier_function(x: float) -> float:
-        return float(x * multiplier)
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
+    """
+        Args:
+            multiplier: factor
 
-    return multiplier_function
+        Return:
+            multiplication in float
+    """
+
+    def x(f: float) -> float:
+        """ Get the second argument somthing like JS """
+        return float(f * multiplier)
+
+    return x
